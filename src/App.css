@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#form-holder {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  width: 25%;
+  height: 90vh;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px rgb(198, 195, 195);
+  padding: 8px 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.form .email-user {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form form,
+.parent-field {
+  margin-top: 15px;
+}
+
+.name-field,
+.parent-field,
+.gender-field,
+.area-details,
+.marks-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dob-field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.dob-field p {
+  font-size: 17px;
+  font-weight: 400;
+  margin-right: 20px;
+  color: grey;
+}
+
+.gender-field,
+.area-details,
+.marks-field {
+  margin-top: 20px;
+}
+
+.address-field {
+  margin-top: 15px;
+}
+
+.submit-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#standard-basic {
+  width: 160px;
+}
+#standard-basic-gender {
+  width: 136px;
+}
+
+.sucess-box {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  box-shadow: 0px 0px 3px 1px rgb(205, 204, 204);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.signIn-box {
+  height: 300px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 3px 1px rgb(205, 204, 204);
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.user-admin {
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  cursor: pointer;
+  padding: 15px 0px;
+}
+
+.user-admin p {
+  padding: 5px 0px;
+}
+
+.signIn-form {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-box {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-box button {
+  margin-top: 30px;
+}
+
+.form-admin {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  position: relative;
+}
+
+.form-admin button {
+  margin-top: 20px;
+}
+
+.table-holder {
+  width: 80%;
+  height: 600px;
+}
+
+.table-holder .title {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 850px) {
+  .form {
+    width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 85%;
+  }
+  #standard-basic {
+    width: 130px;
+  }
+  #standard-basic-gender {
+    width: 105px;
+  }
+  .table-holder {
+    width: 90%;
+    height: 600px;
   }
 }
